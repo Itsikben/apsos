@@ -1,0 +1,129 @@
+#map {
+    height:50%;
+    width: 100%;
+    /* display: none;  */
+}
+
+.mapSection{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top:1%;
+    
+}
+
+.editPlaces {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    margin: auto
+}
+.searchBar {
+    max-width: 350px;
+    margin: auto;
+}
+
+
+.main-map-page {
+    width: 95%;
+    height:100vh;
+    margin-right: 1%;
+  
+}
+.placesList {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between !important;
+    background-color: hsl(0, 0%, 21%);
+    padding: 20px;
+}
+
+ 
+ .image > .img-list {
+    max-height: 300px;
+    width: auto;
+    display:  block;
+    margin:  0 auto;
+}
+
+.input {
+    background-color: hsl(0, 0%, 21%);
+    color: white;
+    border: none;
+    border-bottom: 2px solid gray; 
+}
+
+.placeName {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+
+
+.input::placeholder {
+    color: gray;
+  }
+
+  .places-list-items {
+      width: auto !important;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .mapSection{
+        flex-direction: column;
+    }
+    .main-map-page {
+        margin: auto;
+        height: 100%;
+    }
+    .details-content {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .editPlaces {
+      align-self: center;
+      background-color: black;
+      z-index: 1;
+      display: block;
+    }
+
+    .details-content  > img {
+     align-self: flex-end;
+    }
+    .detailsBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .media {
+        justify-content: center;
+    }
+    #map {
+        height:50vh;
+    }
+    .placeName {
+        display: flex;
+        /* flex-direction: column; */
+        align-self: flex-start;
+    }
+  }
+  img:hover {
+    cursor: pointer;
+  }
+
+.edit-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-icons img {
+    margin: 15px;
+}
+

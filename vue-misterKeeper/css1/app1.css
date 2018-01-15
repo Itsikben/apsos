@@ -1,0 +1,90 @@
+@import '_card.css';
+@import '_editForm.css';
+
+
+
+.main-nav {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important; 
+}
+
+.hero {
+    margin: 20px auto;
+    border-radius: 20px; 
+    width: 50%;
+    background: lightyellow;
+}
+
+
+.edit {
+    margin-top:25px;
+    float: right;
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    padding: 15px;
+    justify-content: flex-start;
+    margin: auto;
+    width: auto;
+}
+
+.container {
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.note-section-wrapper {
+    background: url("../img/board.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.note-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ugly-btn {
+    border: 0;
+    background: lightyellow;
+}
+
+.note-txt {
+    color: black !important;
+}
+
+.note-txt:hover {
+    color: blue !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+    .main-nav {
+        height: auto;
+    }
+    .note-section-wrapper {
+        background-image: none;
+        background-color: #363636
+        
+    }
+    .card {
+        width: 95%;
+    }
+}
+
+  
+

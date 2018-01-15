@@ -1,0 +1,83 @@
+
+.note-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.notecard {
+    height: 100%;
+    width: 20%;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.card {
+    background: lightyellow;
+    border-radius: 10px;
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.card-footer {
+    align-self: center;
+    margin-top: 10px; 
+}
+
+.card-content {
+    padding-bottom: 0;
+}
+
+.card-header-title {
+    display: flex;
+    justify-content: center;
+ }
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .notecard {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .note-section {
+        /* margin: 0; */
+        width: 100% !important;
+    }
+    .card {
+        width:  auto;
+        margin:  auto; 
+        margin-bottom: 10px;
+    }
+    .content {
+        flex-flow: column wrap;
+        height: 100%;
+    }
+
+}
+
+
+hr.line7 {
+    color: black;
+    border-top: 2px solid #050000;
+    border-bottom: 1px solid black;
+}
+
+.note-section-wrapper {
+    background: url("../img/board.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
